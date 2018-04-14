@@ -18,14 +18,14 @@
   <build>
     <finalName>project</finalName>
   </build>
-<distributionManagement>
+ <distributionManagement>
    <snapshotRepository>
-      <id>projectsnap</id>
-      <url>http://35.202.176.238:8081/nexus/content/repositories/projectsnap/</url>
+      <id>test-snapshot</id>
+      <url>http://35.185.9.234:8081/repository/test-snapshot/</url>
    </snapshotRepository>
    <repository>
-    <id>projectrelease</id>
-    <url>http://35.202.176.238:8081/nexus/content/repositories/projectrelease/</url>
+    <id>test-release</id>
+    <url>http://35.185.9.234:8081/repository/test-release/</url>
    </repository>
   </distributionManagement>
 </project>
