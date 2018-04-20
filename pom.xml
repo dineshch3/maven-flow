@@ -21,11 +21,11 @@
  <distributionManagement>
    <snapshotRepository>
       <id>test-snapshot</id>
-      <url>https://nexus.devopsguy9.com/repository/test-snapshot/</url>
+      <url>http://35.185.9.234/repository/test-snapshot/</url>
    </snapshotRepository>
    <repository>
     <id>test-release</id>
-    <url>https://nexus.devopsguy9.com/repository/test-release/</url>
+    <url>http://35.185.9.234//repository/test-release/</url>
    </repository>
   </distributionManagement>
 </project>
