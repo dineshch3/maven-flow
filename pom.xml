@@ -25,7 +25,7 @@
    </snapshotRepository>
    <repository>
     <id>test-release</id>
-    <url>https://35.185.9.234/repository/test-release/</url>
+    <url>http://35.185.9.234/repository/test-release/</url>
    </repository>
   </distributionManagement>
 </project>
