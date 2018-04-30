@@ -4,7 +4,7 @@
   <groupId>dev.tech.ops</groupId>
   <artifactId>project</artifactId>
   <packaging>war</packaging>
-  <version>5.0</version>
+  <version>6.0</version>
   <name>project Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
