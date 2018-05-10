@@ -2,14 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Deploy') {
-            when {
-              expression {
-                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
-              }
-            }
+        stage('Build') {
             steps {
-                sh 'deploy'
+                sh 'package'
             }
         }
     }
