@@ -2,20 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('npm') {
             steps {
-                sh 'mvn package'
+                sh 'npm install'
             }
              
         }
-        stage('Transfer files') {
+        stage('bower') {
             steps {
-                sh 'scp target/project.war dinesh@35.185.9.234:/home/dinesh/'
+                sh 'bower install'
             }
         }
-         stage('deploy') {
+         stage('npm run prod') {
             steps {
-                sh 'mvn deploy'
+                sh 'npm run prod'
             }
         }
     }
