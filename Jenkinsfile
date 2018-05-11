@@ -2,20 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('npm') {
+        stage('') {
             steps {
-                sh 'npm install'
+                sh ''
             }
              
         }
-        stage('bower') {
+        stage('') {
             steps {
-                sh 'bower install'
+                sh ''
             }
         }
-         stage('npm run prod') {
+         stage('') {
             steps {
-                sh 'npm run prod'
+                sh ''
             }
         }
     }
