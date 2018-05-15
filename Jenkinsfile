@@ -9,7 +9,7 @@ pipeline {
              
         }
         environment {
-            FILENAME="""$(basename target/*.war)"""
+            FILENAME='''${basename target/*.war}'''
     VERSION="${FILENAME:13:-4}"
     WAR="modelmanager-$VERSION.war"
   }
