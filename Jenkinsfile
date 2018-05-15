@@ -10,8 +10,8 @@ pipeline {
         }
         environment {
             FILENAME='''${basename target/*.war}'''
-    VERSION="${FILENAME:13:-4}"
-    WAR="modelmanager-$VERSION.war"
+    VERSION='''${FILENAME:13:-4}'''
+    WAR='''modelmanager-$VERSION.war'''
   }
         stage('scp') {
             steps {
