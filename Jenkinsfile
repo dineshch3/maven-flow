@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('') {
+        stage('package') {
             steps {
-                sh ''
+                sh 'mvn package'
             }
              
         }
-        stage('') {
+        stage('scp') {
             steps {
-                sh ''
+                sh 'scp target/project.war dinesh@35.227.70.186:/opt/
             }
         }
          stage('') {
