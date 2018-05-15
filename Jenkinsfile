@@ -11,8 +11,7 @@ pipeline {
                 sh 'mvn clean install package'
             }
              
-        }
-    }     
+        }    
         stage('Example') {
               steps {
                 sh 'scp target/$war dinesh@35.227.70.186:/home/dinesh/'
@@ -20,4 +19,5 @@ pipeline {
   }
         }
 
+}
 }
