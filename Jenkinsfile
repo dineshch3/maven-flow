@@ -7,14 +7,16 @@ pipeline {
                 sh 'mvn clean install package'
             }
              
-        }    
-        stage('Example') {
-             environment {
-
-              steps {
-                   FILENAME = '${basename target/*.war}'
+        } 
+        environment {
+            FILENAME = '${basename target/*.war}'
     VERSION = '${FILENAME:13:-4}'
-    WAR = 'modelmanager-$VERSION.war'
+    WAR = 'modelmanager-$VERSION.wa
+            r'
+        stage('Example') {
+             
+              steps {
+               
                 sh 'scp target/$war dinesh@35.227.70.186:/home/dinesh/'
               }          
   }
