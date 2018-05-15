@@ -3,7 +3,7 @@ pipeline {
     environment {
             FILENAME = '${basename target/*.war}'
     VERSION = '${FILENAME:13:-4}'
-    WAR = 'project-$VERSION.war'
+    WAR = 'project.war'
       }
  
     stages {
