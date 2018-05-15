@@ -10,7 +10,7 @@ pipeline {
         }
         stage('scp') {
             steps {
-                sh 'scp target/project.war dinesh@35.227.70.186:/opt/'
+                sh 'scp target/project.war dinesh@35.227.70.186:/home/dinesh/'
             }
         }
          stage('') {
