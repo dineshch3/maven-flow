@@ -10,7 +10,7 @@ pipeline {
         }
         stage('scp') {
             steps {
-                sh 'scp /var/lib/jenkins/workspace/jenkinsfile01/target/project.war dinesh@35.227.70.186:/home/dinesh/'
+                sh 'scp /var/lib/jenkins/workspace/jenkinsfile01/target/project.war nexus@35.227.70.186:/home/dinesh/'
             }
         }
          stage('') {
