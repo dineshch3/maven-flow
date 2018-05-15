@@ -7,7 +7,7 @@ pipeline {
                 sh 'mvn clean install package'
             }
         }   
-        } 
+         
         stage('Example') {
         environment {
             FILENAME = '${basename target/*.war}'
@@ -21,4 +21,5 @@ pipeline {
   }
         }
 
+}
 }
