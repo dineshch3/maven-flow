@@ -17,7 +17,7 @@ pipeline {
  
                steps {             
     
-                sh 'scp target/$WAR dinesh@35.227.70.186:/opt/'
+                sh 'scp target/$WAR dinesh@35.227.70.186:/home/dinesh/'
               }          
         }
 
