@@ -24,8 +24,8 @@
       <url>http://35.227.70.186:8081/repository/test-snapshot/</url>
    </snapshotRepository>
    <repository>
-    <id>test-release</id>
-    <url>http://35.227.70.186:8081/repository/test-release/</url>
+    <id>predera-release</id>
+    <url>https://ptdops02.westus2.cloudapp.azure.com/repository/predera-release/</url>
    </repository>
   </distributionManagement>
 </project>
