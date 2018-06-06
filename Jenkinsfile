@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script{
                     
-                    git url: "${giturl}", git branch: "${gitbranch}" 
+                    git url: "${giturl}", branch: "${gitbranch}" 
                   
                 def mvnHome = tool 'M3'
                     
