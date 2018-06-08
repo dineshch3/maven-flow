@@ -10,5 +10,16 @@ pipeline {
                 
             }
         }
+        stage('package') {
+            steps {
+                   post {
+                    success {
+                    slackSend channel: 'cicd-notifications',
+                    color: 'good',
+                    message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
+                 }
+            }
     }
+    }
+   }
 }
