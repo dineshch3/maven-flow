@@ -2,20 +2,12 @@ pipeline {
 
     agent any
 
-    stages {
-
-        stage('Build') {
-            steps {
-                sh 'mvn clean install package'
-            }
-        }	
-  }
  node {
     try {
         notifyBuild('STARTED')
 
         stage('Prepare code') {
-            echo 'do checkout stuff'
+            echo 'mvn package'
         }
 
         stage('Testing') {
