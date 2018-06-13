@@ -17,6 +17,7 @@ node {
    }
  }
  }
+ }
  def notifyStarted() {    slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})") 
  }
  
@@ -26,5 +27,4 @@ node {
  def notifyFailed() {
    slackSend (color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
  
- }
  }
